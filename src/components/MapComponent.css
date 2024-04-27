@@ -1,0 +1,8 @@
+@import url('https://js.arcgis.com/4.18/esri/themes/dark/main.css');
+
+#gisDiv {
+    padding: 0;
+    margin: 0;
+    height: 600px;
+    width: 100%;
+}
