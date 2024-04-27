@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react'
 import Map from "@arcgis/core/Map"
 import MapView from "@arcgis/core/views/MapView"
 import Search from "@arcgis/core/widgets/Search"
-import "./MapComponent.css"
+import "./MapComponent.scss"
 
 const MapComponent = () => {
   const mapDiv = useRef(null)
@@ -13,8 +13,8 @@ const MapComponent = () => {
 
       const view = new MapView({
         map,
-        center: [-73, 42] ,
-        zoom: 10,
+        center: [174.0398562, -41.1450073] ,
+        zoom: 5,
         container: mapDiv.current,
       })
 
@@ -23,8 +23,11 @@ const MapComponent = () => {
     }
   })
 
-
-  return <div id="gisDiv" ref={mapDiv}></div>
+  return (
+    <div className="mapContainer">
+     <div className="gisDiv" ref={mapDiv}></div>
+    </div>
+  )
 }
 
 export default MapComponent

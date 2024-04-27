@@ -1,0 +1,24 @@
+@import url('https://js.arcgis.com/4.18/esri/themes/dark/main.css');
+@import './../styles/mixins';
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+
+  @include tablet-and-up {
+    height: 600px;
+    width: 100%;
+  }
+
+  .gisDiv {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    width: 80%;
+
+    @include desktop-and-up {
+      height: 600px;
+      width: 100%;
+    }
+  }
+}

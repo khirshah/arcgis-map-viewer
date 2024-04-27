@@ -13,7 +13,7 @@ describe('App', () => {
     it('renders the app',() => {
         render(<App />)
 
-        const appTitle = screen.getByText('Hello world!')
+        const appTitle = screen.getByText('Map of New Zealand')
         expect(appTitle).toBeInTheDocument()
     })
 })
