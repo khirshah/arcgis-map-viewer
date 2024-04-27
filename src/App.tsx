@@ -1,12 +1,11 @@
 import './App.css'
-import MapComponent from "./components/MapComponent.tsx"
+import NewZealandMap from "./components"
 
 function App() {
 
   return (
     <>
-      <h1>Hello world!</h1>
-      <MapComponent/>
+      <NewZealandMap/>
     </>
   )
 }
