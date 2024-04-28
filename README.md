@@ -16,7 +16,11 @@ The feature layer displays urban areas
 https://www.arcgis.com/home/item.html?id=2853306e11b2467ba0458bf667e1c584
 
 ## Install
+Clone the repository and in the project root folder run the following command from the terminal:
+
 `npm i`
 
 ## Run
+After installation, in the project root folder run the following command from the terminal:
+
 `npm run dev`
