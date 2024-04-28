@@ -24,5 +24,6 @@
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "types": ["node","vite/client", "@testing-library/jest-dom/vitest","@testing-library/jest-dom"]
+  "types": ["node","vite/client", "@testing-library/jest-dom/vitest","@testing-library/jest-dom"],
+  "react": [ "./node_modules/@types/react" ]
 }

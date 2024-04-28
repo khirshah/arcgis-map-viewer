@@ -16,10 +16,10 @@ describe('App', () => {
         expect(appTitle).toBeInTheDocument()
     })
 
-    it('renders the map title',() => {
+    it('renders New Zealand map',() => {
         render(<App />)
 
-        const appTitle = screen.getByText('Map of New Zealand')
-        expect(appTitle).toBeInTheDocument()
+        const mapTitle = screen.getByText('Map of New Zealand')
+        expect(mapTitle).toBeInTheDocument()
     })
 })
