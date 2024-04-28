@@ -15,6 +15,13 @@ https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931
 The feature layer displays urban areas
 https://www.arcgis.com/home/item.html?id=2853306e11b2467ba0458bf667e1c584
 
+### Map of Santa Monica
+A topograhic map with the option to switch between different basemap styles:
+- topographic
+- outdoor
+- navigation
+- satellite
+
 ## Running the app locally
 
 ### Prerequisites
