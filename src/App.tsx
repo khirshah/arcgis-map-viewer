@@ -1,5 +1,5 @@
 import './App.css'
-import NewZealandMap from "./components"
+import { NewZealandMap } from "./components"
 
 function App() {
 
