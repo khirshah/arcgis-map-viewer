@@ -49,7 +49,7 @@ const MapComponent = ({
     <div className="mapContainer">
      <div className="gisDiv" ref={mapDiv}></div>
       {Widget && (
-        <div className="combobox">
+        <div className="dropdown">
           <Widget/>
         </div>
       )}
