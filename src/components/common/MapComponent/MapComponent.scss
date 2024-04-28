@@ -5,20 +5,21 @@
   display: flex;
   justify-content: center;
 
-  @include tablet-and-up {
-    height: 600px;
-    width: 100%;
-  }
-
   .gisDiv {
     padding: 0;
     margin: 0;
     height: 400px;
     width: 80%;
 
-    @include desktop-and-up {
-      height: 600px;
+    @include desktop-to-large-screen {
+      height: 800px;
       width: 100%;
+    }
+
+    @include large-screen {
+      height: 1000px;
+      width: 100%;
+      max-width: 1400px;
     }
   }
 }

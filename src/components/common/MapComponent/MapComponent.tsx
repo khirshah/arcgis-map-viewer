@@ -30,7 +30,7 @@ const MapComponent = ({ layers }: MapComponentProps) => {
 
 
       const searchWidget = new Search({ view })
-      view.ui.add(searchWidget, "top-right")
+      view.ui.add(searchWidget, "bottom-right")
     }
   })
 
