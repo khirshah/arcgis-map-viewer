@@ -15,19 +15,21 @@ https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931
 The feature layer displays urban areas
 https://www.arcgis.com/home/item.html?id=2853306e11b2467ba0458bf667e1c584
 
-## Prerequisites for local run
-You will need to create an ArcGIS developer accound and generate an API key for yourself
+## Running the app locally
+
+### Prerequisites
+1. You will need to create an ArcGIS developer account and generate an API key for yourself
 Here is the link: https://developers.arcgis.com/dashboard/
 
-Add a .env file to your project root folder and add the API key as follows:
-VITE_ARCGIS_API_KEY=<your api key here without quotaion marks>
+2. Add a .env file to your project root folder and add the API key as follows:
+VITE_ARCGIS_API_KEY= `<your api key here without quotaion marks>`
 
-## Install
+### Install
 Clone the repository and in the project root folder run the following command from the terminal:
 
 `npm i`
 
-## Run
+### Run
 After installation, in the project root folder run the following command from the terminal:
 
 `npm run dev`
