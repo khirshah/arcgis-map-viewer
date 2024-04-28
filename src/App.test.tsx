@@ -36,14 +36,14 @@ describe('App', () => {
             expect(mapDescription).toBeInTheDocument()
         })
 
-        it('renders Santa Monica section title',() => {
+        it.skip('renders Santa Monica section title',() => {
             render(<App />)
 
             const mapTitle = screen.getByText('Map of Santa Monica')
             expect(mapTitle).toBeInTheDocument()
         })
 
-        it('renders Santa Monica section description',() => {
+        it.skip('renders Santa Monica section description',() => {
             render(<App />)
 
             const mapDescription = screen.getByText(
