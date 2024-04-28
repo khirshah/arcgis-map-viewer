@@ -1,52 +1,37 @@
-import React, { useMemo, useState } from "react"
-import "@esri/calcite-components/dist/components/calcite-combobox"
-import "@esri/calcite-components/dist/components/calcite-combobox-item"
-import { CalciteCombobox, CalciteComboboxItem } from '@esri/calcite-components-react'
+import React, { useState } from "react"
 import { MapComponent } from "../common"
 
-
 const SantaMonicaMap = () => {
-  const [baseMapStyle,setBaseMapStyle] = useState<string>('topo')
-  const layerTypes = useMemo(() => {
-    return [
-      {
-        name: "Topographic",
-        value: "arcgis/topographic"
-      },
-      {
-        name: "Navigation",
-        value: "arcgis/navigation"
-      },
-      {
-        name: "Outdoor",
-        value: "arcgis/outdoor"
-      },
-      {
-        name: "Satellite",
-        value: "arcgis/imagery"
-      }
-    ]
-  }, [])
+  const [baseMapStyle,setBaseMapStyle] = useState<string>("arcgis/topographic")
+  const [ dropDownLabel, setDropDownLabel ] = useState<string>('Change basemap style here')
 
   const Widget: React.FC = () => (
-    <CalciteCombobox
-      label="Change basemap style"
-      placeholder="Change basemap style here"
+    <select
+      aria-label='Change basemap style here'
+      defaultValue={dropDownLabel}
+      onChange={(event) => {
+        setBaseMapStyle(event.target.value)
+        setDropDownLabel(event.target.value)
+      }}
     >
-      {
-        layerTypes.map((layer) => {
-          return (
-            <CalciteComboboxItem
-              key={layer.name}
-              textLabel={layer.name}
-              value={layer.value}
-              onCalciteComboboxItemChange={(e) => setBaseMapStyle(e.target.value)}
-            />
-          )
-        })
-      }
-    </CalciteCombobox>
-    )
+      <option
+        value={"arcgis/topographic"}
+        aria-label="Topographic"
+      >Topographic</option>
+      <option
+        value={"arcgis/navigation"}
+        aria-label="Navigation"
+      >Navigation</option>
+      <option
+        value={"arcgis/outdoor"}
+        aria-label="Outdoor"
+      >Outdoor</option>
+      <option
+        value={"arcgis/imagery"}
+        aria-label="Satellite"
+      >Satellite</option>
+    </select>
+  )
 
   return (
     <MapComponent

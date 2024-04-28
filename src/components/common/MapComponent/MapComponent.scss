@@ -15,13 +15,24 @@
     }
   }
 
-  .combobox {
+  .dropdown {
     padding-top: 30px;
-    padding-bottom: 70px;
     width: 70%;
 
     @include desktop-and-up {
       width: 30%;
+    }
+
+    select {
+      width: 100%;
+      color: #236192;
+      background-color: white;
+      border: 1px solid #236192;
+      font-size: 1rem;
+
+      @include desktop-and-up {
+        font-size: 1.2rem;
+      }
     }
   }
 }
