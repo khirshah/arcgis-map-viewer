@@ -1,6 +1,7 @@
 import MapComponent from "../common"
 import TileLayer from "@arcgis/core/layers/TileLayer"
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer"
+import './NewZealandMap.scss'
 
 const NewZealandMap = () => {
 
@@ -14,8 +15,13 @@ const NewZealandMap = () => {
 
   return (
     <>
-      <h1>Map of New Zealand</h1>
-      <MapComponent layers={[terrainBaseLayer, timeZoneLayer]}/>
+      <h2>Map of New Zealand</h2>
+      <MapComponent
+        layers={[terrainBaseLayer, timeZoneLayer]}
+        coordinates={[174.0398562, -39.1450073]}
+        zoom={6}
+        basemap={'topo'}
+      />
     </>
   )
 }
