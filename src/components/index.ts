@@ -1,1 +1,1 @@
-export { default } from './NewZealandMap/NewZealandMap'
+export { default as NewZealandMap } from './NewZealandMap/NewZealandMap'
