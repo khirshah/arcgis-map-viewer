@@ -4,7 +4,7 @@ import { vi } from 'vitest'
 import { render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 
-vi.mock('./components/MapComponent.tsx', () => ({
+vi.mock('./components/NewZealandMap/NewZealandMap.tsx', () => ({
     default: 'div',
 }))
 
