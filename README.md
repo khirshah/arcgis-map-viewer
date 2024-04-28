@@ -15,6 +15,13 @@ https://www.arcgis.com/home/item.html?id=c61ad8ab017d49e1a82f580ee1298931
 The feature layer displays urban areas
 https://www.arcgis.com/home/item.html?id=2853306e11b2467ba0458bf667e1c584
 
+## Prerequisites for local run
+You will need to create an ArcGIS developer accound and generate an API key for yourself
+Here is the link: https://developers.arcgis.com/dashboard/
+
+Add a .env file to your project root folder and add the API key as follows:
+VITE_ARCGIS_API_KEY=<your api key here without quotaion marks>
+
 ## Install
 Clone the repository and in the project root folder run the following command from the terminal:
 
@@ -24,3 +31,7 @@ Clone the repository and in the project root folder run the following command fr
 After installation, in the project root folder run the following command from the terminal:
 
 `npm run dev`
+
+## Live version
+The app is deployed here if you just would like to have a look:
+https://agi-arcgis-map-viewer.vercel.app/
