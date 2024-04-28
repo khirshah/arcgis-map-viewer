@@ -9,8 +9,14 @@ vi.mock('./components/MapComponent.tsx', () => ({
 }))
 
 describe('App', () => {
+    it('renders the app header',() => {
+        render(<App />)
 
-    it('renders the app',() => {
+        const appTitle = screen.getByText('ArcGIS Map Viewer')
+        expect(appTitle).toBeInTheDocument()
+    })
+
+    it('renders the map title',() => {
         render(<App />)
 
         const appTitle = screen.getByText('Map of New Zealand')

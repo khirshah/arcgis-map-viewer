@@ -1,10 +1,11 @@
 import './App.css'
-import { NewZealandMap } from "./components"
+import { NewZealandMap, Header } from "./components"
 
 function App() {
 
   return (
     <>
+      <Header/>
       <NewZealandMap/>
     </>
   )

@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+
+.header {
+  background-color: #002b4e;
+  color: #ffffff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+
+  @include tablet-and-up {
+    height: 7rem;
+  }
+
+  h1 {
+    margin: 0;
+    padding-left: 2rem;
+
+    @include desktop-and-up {
+      padding-left: 3rem;
+    }
+  }
+}
