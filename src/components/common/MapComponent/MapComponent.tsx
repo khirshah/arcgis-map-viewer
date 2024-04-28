@@ -10,24 +10,29 @@ import IntrinsicAttributes = JSX.IntrinsicAttributes;
 
 type MapComponentProps = {
   layers: IntrinsicAttributes & (TileLayer | FeatureLayer)[]
+  coordinates: number[]
+  zoom: number
+  basemap: string
 }
 
-const MapComponent = ({ layers }: MapComponentProps) => {
+const MapComponent = ({
+  layers,
+  coordinates,
+  zoom,
+  basemap
+}: MapComponentProps) => {
   const mapDiv = useRef(null)
 
   useEffect(() => {
     if (mapDiv.current) {
-
-
-      const map: Map = new Map({ basemap: "topo", layers: layers })
+      const map: Map = new Map({ basemap: basemap, layers: layers })
 
       const view = new MapView({
         map,
-        center: [174.0398562, -41.1450073] ,
-        zoom: 6,
+        center: coordinates,
+        zoom: zoom,
         container: mapDiv.current,
       })
-
 
       const searchWidget = new Search({ view })
       view.ui.add(searchWidget, "bottom-right")
