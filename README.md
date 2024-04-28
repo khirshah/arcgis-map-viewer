@@ -44,3 +44,6 @@ After installation, in the project root folder run the following command from th
 ## Live version
 The app is deployed here if you just would like to have a look:
 https://agi-arcgis-map-viewer.vercel.app/
+
+# Supported browesers
+The app was manual tested in Firefox, Chrome, Safari and Brave browsers, both mobile and desktop.
