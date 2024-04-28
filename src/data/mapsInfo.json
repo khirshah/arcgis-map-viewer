@@ -1,0 +1,6 @@
+{
+  "newZealandMap": {
+    "title": "Map of New Zealand",
+    "description": "Topographic map, centered to New Zealand North Island. There are 2 added layers to the base map. The World Terrain Base layer is features shaded relief imagery, bathymetry, and coastal water features designed to provide a neutral background for other data layers. The World Urban Areas Layer represents the major urban areas of the world as shaded polygons. There is also a Search box widget so the map can be easily centered to other areas on the world map"
+  }
+}

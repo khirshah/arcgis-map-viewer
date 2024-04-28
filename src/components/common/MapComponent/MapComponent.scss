@@ -2,24 +2,16 @@
 @import '../../../styles/mixins';
 
 .mapContainer {
-  display: flex;
-  justify-content: center;
-
   .gisDiv {
-    padding: 0;
-    margin: 0;
     height: 400px;
-    width: 80%;
+    width: 100%;
 
     @include desktop-to-large-screen {
-      height: 800px;
-      width: 100%;
+      height: 600px;
     }
 
     @include large-screen {
-      height: 1000px;
-      width: 100%;
-      max-width: 1400px;
+      height: 700px;
     }
   }
 }

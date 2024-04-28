@@ -1,14 +1,18 @@
-import './App.css'
-import { NewZealandMap, Header } from "./components"
+import './App.scss'
+import Page from "./components/common/Page/Page.tsx"
+import { Header, NewZealandMap } from "./components"
+import mapData from "./data/mapsInfo.json"
 
 function App() {
 
   return (
-    <>
+    <div className="app">
       <Header/>
-      <h2>Map of New Zealand</h2>
-      <NewZealandMap/>
-    </>
+      <Page
+        mapData={mapData.newZealandMap}
+        MapContent={NewZealandMap}
+      />
+    </div>
   )
 }
 
