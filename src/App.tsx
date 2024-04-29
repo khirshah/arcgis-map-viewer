@@ -1,6 +1,3 @@
-import './App.scss'
-import Page from "./components/common/Page/Page.tsx"
-import { Header, NewZealandMap, SantaMonicaMap } from "./components"
 import mapData from "./data/mapsInfo.json"
 import esriConfig from "@arcgis/core/config"
 import {
@@ -8,31 +5,37 @@ import {
   Route,
   RouterProvider
 } from 'react-router-dom'
+import Page from "./components/common/Page/Page.tsx"
+import { NewZealandMap, SantaMonicaMap } from "./components"
+import Layout from "./components/Layout/Layout.tsx"
 
 esriConfig.apiKey = import.meta.env.VITE_ARCGIS_API_KEY
 
-const CurrentApp = () => {
-  return <div className="app">
-    <Header/>
-    <Page
-      mapData={mapData.newZealandMap}
-      MapContent={NewZealandMap}
-    />
-    <Page
-      mapData={mapData.santaMonicaMap}
-      MapContent={SantaMonicaMap}
-    />
-  </div>
-}
-
 const AppRoutes = () => {
-
   return (
     <>
-    <Route
-      path='/'
-      element={<CurrentApp />}
-    />
+      <Route
+        element={<Layout/>}
+      >
+        <Route
+          path='/'
+          element={
+            <Page
+              mapData={mapData.newZealandMap}
+              MapContent={NewZealandMap}
+            />
+          }
+        />
+        <Route
+          path='/santa-monica'
+          element={
+            <Page
+              mapData={mapData.santaMonicaMap}
+              MapContent={SantaMonicaMap}
+            />
+          }
+        />
+      </Route>
     </>
   )
 }
