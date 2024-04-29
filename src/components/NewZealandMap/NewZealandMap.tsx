@@ -1,6 +1,7 @@
 import { MapComponent } from "../common"
 import TileLayer from "@arcgis/core/layers/TileLayer"
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer"
+import './NewZealandMap.scss'
 
 const NewZealandMap = () => {
 

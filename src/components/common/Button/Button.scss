@@ -1,0 +1,16 @@
+.button {
+  cursor: pointer;
+  background-color: #8bc700;
+  height: 3rem;
+  width: 20rem;
+  color: #022d4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  clip-path: polygon(0% 0%, 0% 99%, 95% 100%, 100% 70%, 100% 0%);
+
+  .icon {
+    padding-left: 20px;
+  }
+}

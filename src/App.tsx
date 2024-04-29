@@ -1,15 +1,15 @@
-import mapData from "./data/mapsInfo.json"
 import esriConfig from "@arcgis/core/config"
 import {
   createBrowserRouter, createRoutesFromElements,
   Route,
   RouterProvider
 } from 'react-router-dom'
-import Page from "./components/common/Page/Page.tsx"
-import { NewZealandMap, SantaMonicaMap } from "./components"
 import Layout from "./components/Layout/Layout.tsx"
+import { NewZealandScene, SantaMonicaScene }  from './scenes'
+
 
 esriConfig.apiKey = import.meta.env.VITE_ARCGIS_API_KEY
+
 
 const AppRoutes = () => {
   return (
@@ -20,19 +20,13 @@ const AppRoutes = () => {
         <Route
           path='/'
           element={
-            <Page
-              mapData={mapData.newZealandMap}
-              MapContent={NewZealandMap}
-            />
+            <NewZealandScene/>
           }
         />
         <Route
           path='/santa-monica'
           element={
-            <Page
-              mapData={mapData.santaMonicaMap}
-              MapContent={SantaMonicaMap}
-            />
+            <SantaMonicaScene/>
           }
         />
       </Route>
