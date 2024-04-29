@@ -1,10 +1,22 @@
 {
   "newZealandMap": {
     "title": "Map of New Zealand",
-    "description": "Topographic map, centered to New Zealand North Island. There are 2 added layers to the base map. The World Terrain Base layer features shaded relief imagery, bathymetry, and coastal water features designed to provide a neutral background for other data layers. The World Urban Areas Layer represents the major urban areas of the world as shaded polygons. There is also a Search box widget so the map can be easily centered to other areas on the world map"
+    "description": "Topographic map, centered to New Zealand North Island. There are 2 added layers to the base map. The World Terrain Base layer features shaded relief imagery, bathymetry, and coastal water features designed to provide a neutral background for other data layers. The World Urban Areas Layer represents the major urban areas of the world as shaded polygons. There is also a Search box widget so the map can be easily centered to other areas on the world map.",
+    "buttonDetails":{
+      "text": "Santa Monica map",
+      "label": "Link to Santa Monica map",
+      "href": "/santa-monica"
+    },
+    "buttonExplainer": "If you would like to see another one of these maps, featuring Santa Monica, click the button below"
   },
   "santaMonicaMap": {
     "title": "Map of Santa Monica",
-    "description": "Topographic map, centered to Santa Monica mountains in the US. There is a dropdown menu below the map, where you can choose from 4 base layers, the default Topographic and additionally Navigation, Outdoor and Satellite. There is also a Search box widget so the map can be easily centered to other areas on the world map"
+    "description": "Topographic map, centered to Santa Monica mountains in the US. There is a dropdown menu below the map, where you can choose from 4 base layers, the default Topographic and additionally Navigation, Outdoor and Satellite. There is also a Search box widget so the map can be easily centered to other areas on the world map.",
+    "buttonDetails":{
+      "text": "New Zealand map",
+      "label": "Link to New Zealand map",
+      "href": "/"
+    },
+    "buttonExplainer": "If you would like to see another one of these maps, featuring New Zealand, click the button below"
   }
 }

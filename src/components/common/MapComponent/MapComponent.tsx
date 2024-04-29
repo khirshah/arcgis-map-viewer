@@ -22,11 +22,13 @@ const MapComponent = ({
   zoom,
   basemap,
   Widget
+
 }: MapComponentProps) => {
   const mapDiv = useRef(null)
 
   useEffect(() => {
     if (mapDiv.current) {
+
       const mapOptions = {
         basemap: basemap,
         layers: layers
