@@ -2,7 +2,8 @@ import esriConfig from "@arcgis/core/config"
 import {
   createBrowserRouter, createRoutesFromElements,
   Route,
-  RouterProvider
+  RouterProvider,
+  ScrollRestoration,
 } from 'react-router-dom'
 import Layout from "./components/Layout/Layout.tsx"
 import { NewZealandScene, SantaMonicaScene }  from './scenes'
@@ -15,7 +16,11 @@ const AppRoutes = () => {
   return (
     <>
       <Route
-        element={<Layout/>}
+        element={
+        <>
+          <Layout/>
+          <ScrollRestoration/>
+        </>}
       >
         <Route
           path='/'
@@ -25,6 +30,12 @@ const AppRoutes = () => {
         />
         <Route
           path='/santa-monica'
+          element={
+            <SantaMonicaScene/>
+          }
+        />
+        <Route
+          path='*'
           element={
             <SantaMonicaScene/>
           }
