@@ -34,6 +34,12 @@ const AppRoutes = () => {
             <SantaMonicaScene/>
           }
         />
+        <Route
+          path='*'
+          element={
+            <SantaMonicaScene/>
+          }
+        />
       </Route>
     </>
   )
